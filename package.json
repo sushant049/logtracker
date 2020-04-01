@@ -16,6 +16,7 @@
   "devDependencies": {},
   "scripts": {
     "build-windows": "cd app && npm install && cross-env NODE_ENV=production npm run build && Xcopy /E /y  \"build\" \"..\\public\"",
+    "build-mac": "cd app && npm install && cross-env NODE_ENV=production npm run build && cp cp -a build/ ../public",
     "start": "cross-env NODE_ENV=production node ./bin/www",
     "build-dev-windows": "cd app && npm install && cross-env NODE_ENV=development npm run build && Xcopy /E /y  \"build\" \"..\\public\"",
     "start-dev": "cross-env NODE_ENV=development node ./bin/www",
