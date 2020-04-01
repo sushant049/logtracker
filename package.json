@@ -15,12 +15,12 @@
   },
   "devDependencies": {},
   "scripts": {
-    "build": "cd app && npm install && cross-env NODE_ENV=production npm run build && Xcopy /E /y  \"build\" \"..\\public\"",
+    "build-windows": "cd app && npm install && cross-env NODE_ENV=production npm run build && Xcopy /E /y  \"build\" \"..\\public\"",
     "start": "cross-env NODE_ENV=production node ./bin/www",
-    "build-dev": "cd app && npm install && cross-env NODE_ENV=development npm run build && Xcopy /E /y  \"build\" \"..\\public\"",
+    "build-dev-windows": "cd app && npm install && cross-env NODE_ENV=development npm run build && Xcopy /E /y  \"build\" \"..\\public\"",
     "start-dev": "cross-env NODE_ENV=development node ./bin/www",
-    "dev": "npm run build-dev && npm run start-dev",
-    "deploy": "npm install && npm run build && npm start"
+    "dev": "npm run build-dev-windows && npm run start-dev-windows",
+    "deploy": "npm install && npm run build-windows && npm start-windows"
   },
   "author": "sushant kumar",
   "license": "ISC"
