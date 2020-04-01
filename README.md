@@ -38,3 +38,6 @@ SERVER_URL=http://localhost:8000 #change this to your remote address
     - When `npm build` is run, the react app under `app/` is built, and its output is copied into the `public/` folder. A react app's main **entry point** is *index.html*, so we need to redirect any *non-api* requests to the index.html file to allow react to handle it
 - `routes/` contains the URL handlers
   - `routes/users.js` contains the routing logic for all backend API calls, and calls the corresponding handler under the `controllers/` folder
+  
+## Live URL (hosted in heroku)
+https://log-tracker.herokuapp.com/
